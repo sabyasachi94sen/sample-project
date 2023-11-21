@@ -8,7 +8,7 @@
 # EXPOSE 3000
 # CMD ["npm","start"]
 
-FROM node:18.8 AS build
+FROM node:alpine AS build
 
 WORKDIR /app
 COPY ./package*.json ./
